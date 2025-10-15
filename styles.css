@@ -1,0 +1,32 @@
+#table-container {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    border: #333 solid 1px ;
+    overflow-y: scroll;
+}
+
+#driver-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#driver-table th,
+#driver-table td {
+    padding: 3px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#driver-table th {
+    position: sticky;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+#driver-table th:hover {
+    background-color: #555;
+}

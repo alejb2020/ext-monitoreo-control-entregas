@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Monitoreo - Control Entregas",
+  "version": "1.0",
+  "author":"Alejandro Baez (SVI1 Villa Maria)",
+  "content_scripts": [
+    {
+      "matches": ["https://envios.adminml.com/logistics/monitoring-distribution"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
