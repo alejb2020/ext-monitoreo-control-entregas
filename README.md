@@ -1,6 +1,6 @@
 # Monitoreo - Control de Entregas
 
-Una extensión de navegador para Brave que extrae y organiza datos de monitoreo de entregas desde la plataforma de administración de MercadoLibre.
+Una extensión de navegador universal que extrae y organiza datos de monitoreo de entregas desde la plataforma de administración de MercadoLibre. Compatible con Chrome, Edge, Brave, Firefox y Opera.
 
 ## 🎯 Funcionalidad Principal
 
@@ -17,7 +17,7 @@ La extensión extrae y organiza la siguiente información:
 | Campo | Descripción |
 |-------|-------------|
 | **Ruta** | Identificador de la ruta (A1, A2, B1, etc.) |
-| **Nombre** | Nombre del chofer asignado |
+| **Nombre** | Nombre del driver asignado |
 | **Patente** | Patente del vehículo |
 | **ID Ruta** | Número único de identificación de la ruta |
 | **Entregados** | Cantidad de paquetes entregados exitosamente |
@@ -47,11 +47,23 @@ La extensión extrae y organiza la siguiente información:
 
 ## 🛠️ Instalación
 
+### Para Chrome, Edge, Brave y Opera:
 1. Descarga o clona este repositorio
-2. Abre Brave y ve a `chrome://extensions/`
-3. Activa el "Modo de desarrollador"
-4. Haz clic en "Cargar extensión sin empaquetar"
+2. Abre tu navegador y ve a:
+   - **Chrome**: `chrome://extensions/`
+   - **Edge**: `edge://extensions/`
+   - **Brave**: `brave://extensions/`
+   - **Opera**: `opera://extensions/`
+3. Activa el "Modo de desarrollador" o "Developer mode"
+4. Haz clic en "Cargar extensión sin empaquetar" o "Load unpacked"
 5. Selecciona la carpeta que contiene los archivos de la extensión
+
+### Para Firefox:
+1. Descarga o clona este repositorio
+2. Abre Firefox y ve a `about:debugging`
+3. Haz clic en "Este Firefox" en el panel izquierdo
+4. Haz clic en "Cargar complemento temporal"
+5. Selecciona el archivo `manifest.json` de la extensión
 
 ## 📝 Uso
 
@@ -73,7 +85,12 @@ La extensión extrae y organiza la siguiente información:
 
 ## 🔧 Compatibilidad
 
-- **Navegadores**: Brave (Chromium-based)
+- **Navegadores**: 
+  - ✅ Chrome (Manifest V3)
+  - ✅ Microsoft Edge (Chromium-based)
+  - ✅ Brave Browser
+  - ✅ Opera
+  - ✅ Firefox (WebExtensions API)
 - **Sistemas operativos**: Windows, macOS, Linux
 
 ## 📋 Archivos Incluidos
@@ -87,6 +104,12 @@ La extensión extrae y organiza la siguiente información:
 - Solo funciona en la página específica de monitoreo de distribución
 - Requiere que la página esté completamente cargada para funcionar correctamente
 - Los datos se extraen del DOM actual de la página
+
+## 📝 Notas Importantes
+
+### Diferencias entre Navegadores:
+- **Chrome/Edge/Brave/Opera**: Usan Manifest V3, completamente compatibles
+- **Firefox**: Usa WebExtensions API, compatible pero con algunas diferencias menores en permisos
 
 ---
 
